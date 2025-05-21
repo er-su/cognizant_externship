@@ -1,3 +1,4 @@
+# This function prints the home menu and asks the user for their choice
 def get_choice() -> int:
     while(True):
         print("1: Calculate factorial\n" \
@@ -11,6 +12,7 @@ def get_choice() -> int:
         else:
             print("Invalid selection")
 
+# This function asks the user to input an integer greater than 0
 def get_num() -> int:
     while(True):
         num = int(input("Select a number: "))
@@ -19,12 +21,15 @@ def get_num() -> int:
         else:
             print("Invalid selection")  
 
+# This function calculates the factorial of n
 def factorial(n: int) -> int:
     if n == 1:
         return 1
     
     return n * factorial(n - 1)
 
+# This function finds the fibonacci number at position n where
+# position 0 is 0 and position 1 is 1
 def fibonacci(n: int) -> int:
     if n == 1:
         return 0
